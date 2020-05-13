@@ -21,7 +21,7 @@ public class SignUp extends AppCompatActivity {
 
     private EditText name,power,punch_speed,kick_speed;
     private TextView data;
-    private Button all_data;
+    private Button all_data,next;
     private String alldata;
 
     @Override
@@ -35,6 +35,7 @@ public class SignUp extends AppCompatActivity {
         power=findViewById(R.id.power);
         punch_speed=findViewById(R.id.punch_speed);
         kick_speed=findViewById(R.id.kick_speed);
+        next=findViewById(R.id.next);
 
         data.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -80,6 +81,13 @@ public class SignUp extends AppCompatActivity {
 
                     }
                 });
+            }
+        });
+
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
             }
         });
 
